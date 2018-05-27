@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         videoPlayer =  findViewById(R.id.videoPlayer);
-        Uri myVideoUri= Uri.parse( "android.resource://" + getPackageName() + "/" + "a.mp4");
+        Uri myVideoUri= Uri.parse( "android.resource://" + getPackageName() + "/" + R.raw.a);
         videoPlayer.setVideoURI(myVideoUri);
         MediaController mediaController = new MediaController(this);
         videoPlayer.setMediaController(mediaController);
